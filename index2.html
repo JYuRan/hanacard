@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- equiv=equivalent(동등한)
+    호환을 어떻게 할 것인가의 내용, ie의 가장 최상버전으로 화면을 보게한다. 
+    만약에 크롬이 깔려있다면 크롬브라우저가 웹페이지를 해석해서 보여주라는 의미(크롬엔진을 사용하라는 의미) 
+    ie로 열었다 할지라도 껍데기는 ie이고, 알맹이는 chrome이라는 의미
+    만약에 chrome이 깔려있지 않다면 ie의 최신(최상의) 버전으로 해석
+    요즘 기본적으로 다 적용되어있어서 안적어도 되긴 함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 이 사이트의 넓이를 디바이스(사용자의 기기)에 맞추되 초기비율을 1(100%)로 한다 -->
+    <title>hanacard</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/><!-- slick css -->
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/font/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <!-- 폰트어썸 5.9.0 -->
+    <!-- favicon -->
+    <link rel="Shour icon" href="img/favicon/favicon-16x16.png">
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json"> -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ruse217.dothome.co.kr/web/hanacard/index2.html">
+    <meta property="og:title" content="하나카드">
+    <meta property="og:description" content="하나카드 사이트 연습하기">
+    <meta property="og:image" content="img/favicon/ms-icon-310x310.png">
+    <!-- og는 open graph의 약자, 오픈그래프 속성을 이용해서 더 많은 정보를 입력할 수 있다/
+                og:type ==>페이지의 유형(웹사이트, 비디오)
+                og:type ==>페이지의 이름(제목)
+                og:type ==>페이지의 간단한 설명
+                og:type ==>페이지 대표 이미지-->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    </mata>
+</head>
+
+<body>
+    <!-- 폰트 저작권 문제 걸리면 복잡해짐, 
+        네이버 폰트는 관련문제 조심해서 읽어보기, 구글폰트는 제약 없는 것들만 모아 둠 
+        쓸 것들 넣고 아래 링크(<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">) 복사 후 head에 붙여넣기-->
+    <!-- # : id단축키 -->
+    <div id="wrap">
+        <!-- 헤더가 아이디인 헤더header#header -->
+        <header id="header">
+            <!-- 나중에 가운데맞춤 할 class -->
+            <div class="container">
+                <!-- class header만듦 -->
+                <div class="header clearfix">
+                    <!-- ul>li>a  -->
+                    <ul class="list1 clearfix">
+                        <li class="green"></li>
+                        <!-- 페이지마다 a 태그를 걸어놔야(메뉴에) 탭 칠때마다 넘어갈 수 있음 
+                        뭐없으면 href에 #이라도 적어둬야함
+                        a태그는 태생부터 파란색에 밑줄(하이퍼링크 처럼)-->
+                        <li><a href="#" class="개인">개인</a></li>
+                        <li><a href="#">기업</a></li>
+                        <li><a href="#">가맹점</a></li>
+                    </ul>
+                    <ul class="list2">
+                        <li class="log"><a href="#">로그인</a></li>
+                        <li><a href="#">상품공시실</a></li>
+                        <li><a href="#">금융소비보호</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header> <!-- //header -->
+
+        <div id="banner">
+            <div class="container">
+                <div class="ban_left">
+                    <div class="obj">
+                        <!-- div.ob.ob1 -->
+                        <div class="ob ob1">
+                            <img src="img/ev49_obj_01.png" alt="구름1">
+                        </div><!-- //구름1 -->
+                        <div class="ob ob2">
+                            <img src="img/ev49_obj_02.png" alt="구름2">
+                        </div><!-- //구름2 -->
+                        <div class="ob ob3">
+                            <img src="img/ev49_obj_03.png" alt="달력">
+                        </div><!-- //달력 -->
+                        <div class="ob ob4">
+                            <img src="img/ev43_obj_02.png" alt="쇼핑할땐">
+                        </div><!-- //쇼핑할땐 -->
+                        <div class="ob ob5">
+                            <img src="img/ev43_obj_03.png" alt="타이틀">
+                        </div><!-- //타이틀 -->
+                        <div class="ob ob6">
+                            <img src="img/ev43_obj_04.png" alt="1">
+                        </div><!-- //1 -->
+                        <div class="ob ob7">
+                            <img src="img/ev43_obj_04.png" alt="1">
+                        </div><!-- //1 -->
+                        <div class="ob ob8">
+                            <img src="img/ev49_obj_04.png" alt="우산">
+                        </div><!-- //우산 -->
+                        <div class="ob ob9">
+                            <img src="img/ev49_obj_05.png" alt="슈트케이스">
+                        </div><!-- //슈트케이스 -->
+                        <div class="ob ob10">
+                            <img src="img/ev49_obj_06.png" alt="자동차">
+                        </div><!-- //자동차-->
+                        <div class="ob ob11">
+                            <img src="img/ev49_obj_07.png" alt="선물">
+                        </div><!-- //선물 -->
+                        <div class="ob ob12">
+                            <img src="img/ev49_obj_08.png" alt="박스">
+                        </div><!-- //박스 -->
+                        <div class="ob ob13">
+                            <img src="img/ev49_obj_09.png" alt="가방">
+                        </div><!-- //가방-->
+                        <div class="ob ob14">
+                            <img src="img/ev49_obj_10.png" alt="바람1">
+                        </div><!-- //바람1-->
+                        <div class="ob ob15">
+                            <img src="img/ev49_obj_11.png" alt="바람2">
+                        </div><!-- //바람-->
+                        <div class="ob ob16">
+                            <img src="img/ev49_obj_12.png" alt="원">
+                        </div><!-- //원-->
+                        <div class="ob ob17">
+                            <img src="img/ev49_obj_13.png" alt="서프라이즈">
+                        </div><!-- //서프라이즈-->
+
+
+                    </div>
+                </div><!-- //ban_left -->
+                <div class="ban_right">
+                    <div class="br_tit">
+                        <h3>VIVA G platinum<br>체크카드</h3>
+                        <!-- p태크 파라그래프, 문장을 적을 떄 사용 블럭요소-->
+                        <p>홈페이지/모바일웹에서 카드를 최초로 발급하시면<br>
+                            <strong>연회비 100% 캐쉬백</strong>
+                        </p>
+                        <div class="login_btn">
+                            <ul>
+                                <li class="lb1"><a href="#">로그인</a></li>
+                                <li class="lb2"><a href="#">회원가입</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- //br_tit -->
+                    <div class="br_btn">
+                        <ul>
+                            <li><a href="#">이용대금명세서</a></li>
+                            <li><a href="#">결제예정금액</a></li>
+                            <li><a href="#">카드이용내역</a></li>
+                            <li><a href="#">한도상향</a></li>
+                        </ul>
+                    </div>
+                </div><!-- //ban_right -->
+                <div class="ban_button">
+                    aaa
+                </div>
+            </div>
+        </div> <!-- banner -->
+        <div id="contents">
+            <div id="cont1">
+                <div class="container">
+                    <nav id="nav">
+                        <!-- 메인메뉴, gnb nav에서눌러도 변하지 않는 제목-->
+                        <ul class="gnb">
+                            <a href="#" class="logo1"></a>
+                            <li><a href="#">마이페이지</a></li>
+                            
+                            <li><a href="#">카드</a></li>
+                            <li><a href="#">금융</a></li>
+                            <li><a href="#">혜택</a></li>
+                            <li><a href="#">라이프</a></li>
+                            <li><a href="#">모바일</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        
+                        </ul>
+                        <ul class="gnb_right">
+                            <li class="gr1"><a href="#">간편서비스</a></li>
+                            <!-- 옆에 줄세개 있어서 햄버거메뉴, 삼단메뉴라고 함 -->
+                            <li class="gr2"><a href="#">전체메뉴 <i class="fas fa-bars"></i><!-- 햄버거바 넣음 --></a></li>
+                        </ul>
+                        
+                        <a href="#" class="gnb_search">
+                            <span class="ir">통합검색</span>
+                            <i class="ir" id="검색">레이어팝업 열림</i>
+                        </a>
+                        <a href="#" class="gnb_event">
+                            Event <i class="fas fa-plus"></i>
+                        </a>
+                    </nav><!-- nav -->
+
+                    <div id="card" class="clearfix">
+                        <div class="card_img">
+                            <h4>추천카드</h4>
+                            <div class="card_banner">
+                                <ul class="clearfix">
+                                    <!-- a태그가 있어야 링크를 걸 수 있음 -->
+                                    <li><a href="#">
+                                            <img src="img/card01.png" alt="카드01">
+                                            <em>국내외 전 가맹점 0.7%</em>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <img src="img/card02.png" alt="카드02">
+                                            <em>국내외 전 가맹점 0.7%</em>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">
+                                        <img src="img/card03.png" alt="카드03">
+                                        <em>국내외 전 가맹점 0.7%</em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> <!-- //card_banner -->
+                            <div class="card_link">
+                                <ul class="clearfix">
+                                    <li><a href="#">카드발급조회</a></li>
+                                    <li><a href="#">카드사용등록</a></li>
+                                    <li><a href="#">분실도난</a></li>
+                                    <li><a href="#">카드비밀번호 등록/변경</a></li>
+                                </ul>
+                            </div><!-- //card_link -->
+                            <a href="#" class="cardmore-btn ir">추천카드더보기</a>
+                            <!-- ir 장애인 접근성
+                                옛날엔 버튼 태그 이용했으나 요즘은 a테그로 만듦 -->
+                        </div><!-- card_img -->
+                        <div class="card_desc">
+                            <!-- dl, 설명하는 태그 
+                            dl>dt+dd +는 형제라는 뜻-->
+                            <dl>
+                                <dt>원하는 365 언제나!</dt>
+                                <dd class="cd1">이번달, 지출이 증가<br>쉽고 편리하게 대출을 받을수 있을까</dd>
+                                <dd class="cd2">
+                                    <ul>
+                                        <li><a href="#">단기카드대출</a></li>
+                                        <li><a href="#">장기카드대출</a></li>
+                                        <li><a href="#">일부결제금액이월약정</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div><!-- card_desc -->
+                    </div><!-- //card -->
+                    <div id="event" class="clearfix">
+                        <div class="event_box1">
+                            <div class="eb_banner1">
+                                <p class="eb_desc">원하는 정보와 쌓이는 혜택</p>
+                                <h4 class="eb_tit">웹 회원가입</h4>
+                            </div><!-- //eb_banner1 -->
+                            <div class="eb_banner2">
+                                <p class="eb_desc">유용한 정보를 미리 준비하세요!</p>
+                                <h4 class="eb_tit">해외 이용 가이드</h4>
+                            </div><!-- //eb_banner2 -->
+                            <div class="eb_banner3">
+                                <p class="eb_desc">특변한 혜택을 누리세요</p>
+                                <h4 class="eb_tit">VIP Service</h4>
+                            </div><!-- //eb_banner3 -->
+                        </div><!-- //event_box1 -->
+                        <div class="event_box2">
+                            <div class="eb_banner4">
+                                <div class="eb_icon">
+                                    <ul>
+                                        <li class="ei1"><a href="#" title="새창열기">
+                                        Event <i class="fas fa-plus"></i>
+                                        </a></li>
+                                        <li class="ei2"><a href="#" title="새창열림">
+                                            당첨자 확인
+                                        </a></li>
+                                    </ul>  
+                                </div><!-- //eb_icon -->
+                                <div class="eb_slider">
+                                    <div class="eb_slider_list">
+                                        
+                                            <div>
+                                                <img src="https://www.hanacard.co.kr/ATTACH/NEW_HOMEPAGE/images/banner/carousel/img_mc_event_6596.png
+                                                " class="img_alt" alt="img1">
+                                            </div><!--c1  -->
+                                            <div>
+                                                <img src="https://www.hanacard.co.kr/ATTACH/NEW_HOMEPAGE/images/banner/carousel/img_mc_event_6537.png
+                                                " class="img_alt" alt="img2">
+                                            </div><!--c2  -->
+                                            <div>
+                                                <img src="https://www.hanacard.co.kr/ATTACH/NEW_HOMEPAGE/images/banner/carousel/img_mc_event97.jpg
+
+                                                " class="img_alt" alt="img3">
+                                            </div><!--c3  -->
+                                            <div>
+                                                <img src="https://www.hanacard.co.kr/ATTACH/NEW_HOMEPAGE/images/banner/carousel/img_mc_event_6243.png
+                                                " class="img_alt" alt="img4">
+                                            </div><!--c4  -->
+                                          
+                                    </div>
+                                </div><!-- //eb_slider -->
+                            </div><!-- //eb_banner4-->
+                        </div><!-- //event_box2 -->
+                        <div class="event_box3">3</div><!-- //event_box3 -->
+
+                    </div><!-- //event -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> <!-- code jquery -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script><!-- 슬릭cdn -->
+
+
+    <script>
+        $(document).ready(function(){
+     $('.eb_slider_list').slick({
+        arrows : false,
+        dots:true
+        });
+    });
+    </script>
+
+    <script>
+        let box = document.querySelector('.gnb_event');  // 요소 선택
+        let event_bottom = (box.getBoundingClientRect().bottom);
+        
+        document.addEventListener('scroll', function() {
+            event_bottom = (box.getBoundingClientRect().top);
+            //  console.log(event_bottom);
+            if(event_bottom<(-35)){ 
+                $('nav#nav').addClass('active');
+                }
+            else{
+                $('nav#nav').removeClass('active');
+                }
+    });/* 스크롤 내릴 시 active 클래스 추가하여 nav고정 */
+            
+        
+
+    </script>
+</body>
+
+</html>
